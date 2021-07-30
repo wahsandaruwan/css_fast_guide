@@ -1,0 +1,33 @@
+/* ---------CSS Flexbox--------- */
+/* The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning. */
+
+p{
+    font-size: 0.9rem;
+}
+
+/* -----Flexbox----- */
+.container{
+    background-color: #1c8888;
+    min-height: 400px;
+    padding: 20px;
+    /* Flex */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.container > .box{
+    background-color: #ffffff;
+    padding: 10px;
+    flex-basis: 150px;
+    height: 200px;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+@media(max-width: 800px){
+    .container{
+        flex-direction: column;
+    }
+}

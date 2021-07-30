@@ -1,0 +1,33 @@
+/* ---------CSS Grid--------- */
+/* The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning. */
+
+.container{
+    /* display: inline-grid; */
+    background-color: #8fa512;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-column-gap: 20px;
+    grid-template-rows: 1fr 2fr 3fr;
+    grid-row-gap: 20px;
+}
+
+.gr-item{
+    background-color: #00ffff;
+    padding: 20px;
+    border: 1px solid #000000;
+    font-size: 1.3rem;
+}
+
+.gr-item:first-child{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+@media(max-width: 600px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+}

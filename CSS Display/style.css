@@ -1,0 +1,67 @@
+/* ---------CSS Dsiplay--------- */
+/* The display property specifies the display behavior (the type of rendering box) of an element. */
+
+/* -----None----- */
+/* The element is completely removed */
+
+/* -----Inline----- */
+/* Displays an element as an inline element (like <span>). Any height and width properties will have no effect */
+
+/* -----Block----- */
+/* Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width */
+
+/* -----Inline-Block----- */
+/* Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values */
+
+div{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+p, span{
+    color: #ffffff;
+    background-color: #000000;
+}
+
+/* -----None----- */
+.d-none{
+    background-color: #1e7575;
+}
+
+.d-none > p{
+    /* Display */
+    display: none;
+}
+
+/* -----Inline----- */
+.d-inline{
+    background-color: #f1169d;
+}
+
+.d-inline > p{
+    /* Display */
+    display: inline;
+    width: 300px;
+}
+
+/* -----Block----- */
+.d-block{
+    background-color: #16f158;
+}
+
+.d-block > span{
+    /* Display */
+    display: block;
+}
+
+/* -----Inline-Block----- */
+.d-inb{
+    background-color: #f15b16;
+}
+
+.d-inb > p{
+    /* Display */
+    display: inline-block;
+    width: 300px;
+}
